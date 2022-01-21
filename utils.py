@@ -82,7 +82,6 @@ print('evaluating log-likelihood using soft trained model')
 llhood_test_soft = log_likelihood(X_test, vmf_soft)
 print('evaluating log-likelihood using hard trained model')
 llhood_test_hard = log_likelihood(X_test, vmf_hard)
-import pdb; pdb.set_trace()
 
 assert llhood_test_soft.shape == (100,)
 assert llhood_test_hard.shape == (100,)
